@@ -5,3 +5,48 @@
   box-sizing: border-box;
   font-family: Roboto;
 }
+
+.sheet-container {
+  min-width: 100vw;
+  min-height: 90vh;
+  overflow: scroll;
+}
+
+.sheet-header {
+  display: flex;
+}
+
+.cell {
+  width: 80px;
+  height: 20px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+    background-color: rgba(106, 255, 37, 0.2);
+  }
+}
+
+.cell-header {
+  width: 80px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgba(59, 37, 255, 0.2);
+  }
+}
+
+.sheet-left {
+  width: 80px;
+}
+
+.sheet-body {
+  display: flex;
+}
+
+.col{
+  display: flex;
+}
